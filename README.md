@@ -70,3 +70,12 @@ Traditional gyms still rely on manual tracking, paper records, and WhatsApp grou
 - **Gamification**: Achievements, badges, and leaderboards for users
 
 ---
+
+## 📄 License
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+> You are free to view, copy, and use this code for personal, non-commercial purposes only.  
+> **Modifying or publishing** this project elsewhere is strictly prohibited.
+
+© 2025 Yash's Fitness Hub. All rights reserved.
