@@ -150,7 +150,6 @@ body::before {
 }
 
 /* Original Price Strike-through */
-/* Original Price Strike-through */
 .original-price {
     position: relative;
     display: inline-block;
@@ -198,6 +197,21 @@ footer a:hover {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+/* Smooth entry animations */
+.intro-message,
+.subscription {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Button click animation */
+.btn.clicked {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px #fff;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

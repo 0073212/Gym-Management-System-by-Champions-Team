@@ -182,6 +182,18 @@ footer .aboutus a:hover {
     color: #ff4d4d;
 }
 
+/* Button click animation */
+.cta a.clicked {
+    transform: scale(0.95);
+    background-color: #e60000;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Smooth appearance on page load */
+.header-content {
+    transition: opacity 1s ease-in-out;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .section-content {

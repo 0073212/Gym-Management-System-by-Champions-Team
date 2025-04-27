@@ -138,10 +138,19 @@ footer a:hover {
     margin-right: 5px;
 }
 
+/* Add for js */
 .contact,
 .aboutus {
     margin-bottom: 10px;
 }
+
+.intro-message,
+.coming-soon {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
