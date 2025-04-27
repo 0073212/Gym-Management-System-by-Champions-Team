@@ -8,18 +8,17 @@
     <meta name="keywords" content="AI diet, fitness, personalized diet, health, gym, Yash">
     <meta name="author" content="Yash's Fitness Hub Team">
     <title>AI Diet - Yash's Fitness Hub</title>
+    <link rel="stylesheet" href="ai-diet.css">
 </head>
 
 <body>
+
     <!-- Navigation Bar Start -->
     <header>
         <nav class="navbar">
-            <!-- Logo links to home page -->
             <div class="logo">
                 <a href="home.html">💪 Yash's Fitness Hub</a>
             </div>
-
-            <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="ai-diet.html">AI Diet</a></li>
@@ -32,6 +31,7 @@
     <!-- Navigation Bar End -->
 
     <main class="main-content">
+
         <!-- Intro Section -->
         <section class="ai-diet-intro">
             <h1>🥗 Personalized AI Diet Plans</h1>
@@ -41,33 +41,47 @@
         <!-- Benefits Section -->
         <section class="diet-benefits">
             <h2>💡 Why AI Diet?</h2>
-            <ul>
-                <li>🔍 Tracks your weight and goal</li>
-                <li>🍽️ Generates weekly meal plans</li>
-                <li>📊 Adjusts calories and macros automatically</li>
-                <li>🕒 Saves time – no more guessing what to eat</li>
-            </ul>
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <h3>🔍 Tracks Your Weight</h3>
+                    <p>Stay on top of your fitness goals with real-time tracking.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🍽️ Personalized Meal Plans</h3>
+                    <p>Weekly diets crafted based on your needs and preferences.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>📊 Smart Calorie Adjustment</h3>
+                    <p>Automatically tunes your macros and calories as you progress.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🕒 Save Time</h3>
+                    <p>No more guessing — AI handles your entire meal planning.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Get Your Plan CTA(Call to take action) -->
+
+        <!-- Get Your Plan Section (CARD BASED) -->
         <section class="get-plan">
-            <h2>🚀 Ready to Start?</h2>
-            <p>Our AI will craft a diet just for you.</p>
+            <div class="get-plan-card">
+                <h2>🚀 Ready to Start?</h2>
+                <p>Our AI will craft a diet just for you.</p>
+                <button class="get-started-btn">Get Started</button>
+            </div>
         </section>
 
+        <!-- Plan Access Section -->
         <section class="plan-access">
             <h2>🔐 Access Your AI Diet Plan</h2>
-            <p>AI Diet is <strong>included</strong> with our <span style="color: green;">Trainer Subscription</span>.
-            </p>
+            <p>AI Diet is <strong>included</strong> with our <span class="highlight">Trainer Subscription</span>.</p>
 
             <div class="access-options">
-                <!-- Show this if user has subscription -->
                 <div class="has-subscription" id="subs">
                     <h3>✅ You have Trainer Subscription</h3>
                     <button type="button" class="get-plan-btn">Access AI Diet Plan</button>
                 </div>
 
-                <!-- Show this if user doesn't have subscription -->
                 <div class="no-subscription" id="no-subs">
                     <h3>🔒 You don’t have access yet</h3>
                     <p>One-time unlock for just ₹99</p>
@@ -79,6 +93,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -87,10 +102,10 @@
             <p>📲 Connect with Us</p>
             <div class="social-media">
                 <a href="https://www.instagram.com/YashsFitnessHub" target="_blank">
-                    <img src="Images/instagram-icon.png" alt="Instagram" height="20px"> Instagram
+                    <img src="Images/instagram-icon.jpg" alt="Instagram" height="20px"> Instagram
                 </a>
                 <a href="https://www.linkedin.com/YashsFitnessHub" target="_blank">
-                    <img src="Images/linkdin-icon.png" alt="LinkedIn" height="20px"> LinkedIn
+                    <img src="Images/linkdin-icon.jpg" alt="LinkedIn" height="20px"> LinkedIn
                 </a>
             </div>
             <p>📩 Email: yashfitnesshub@gmail.com</p>
@@ -102,5 +117,7 @@
 
         <p>&copy; 2025 Yash's Fitness Hub. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
