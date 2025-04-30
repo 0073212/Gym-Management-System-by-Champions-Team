@@ -89,11 +89,10 @@ cd Gym-Management-System-by-Champions-Team/Development
 
 - install backend dependencies
 - make a .env file
--PORT=5000
--MONGO_URI='Your mongodb URI'
--JWT_SECRET='Your jwt secret'
--To find JWT_SECRET
--type command in terminal:node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+- PORT=5000
+- MONGO_URI='Your mongodb URI'
+- JWT_SECRET='Your jwt secret'
+- To find JWT_SECRET type command in terminal:node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
 ---
 
