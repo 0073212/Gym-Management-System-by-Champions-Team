@@ -81,7 +81,7 @@ Make sure these tools are installed:
 
 ### 2️⃣ Clone the Repository
 
-```bash
+bash
 git clone https://github.com/0073212/Gym-Management-System-by-Champions-Team.git
 cd Gym-Management-System-by-Champions-Team/Development
 
