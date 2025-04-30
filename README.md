@@ -32,33 +32,12 @@ Traditional gyms still rely on manual tracking, paper records, and WhatsApp grou
 - **Fitness Challenges** like "6-Day Gym Streak" and "Sunday Challenge"
   - Social sharing of progress
 
-### 👑 Owner Dashboard
-- **Payment Tracking**: View who paid, payment modes (online/cash), and store member details
-- **Payment Reminders**: Sent through Gmail to members who haven’t paid
-- **Progress Tracking**: Visual charts showing member progress and challenge participation
-- **Challenge Management**: Owner can create and manage challenges for members
-
----
-
-## 🧠 AI Integration (Planned)
-- **AI-powered Diet Chart**: Personalized diet plans for each member based on their goals and profile
-
----
 
 ## 🧰 Tech Stack (Planned)
 
-- **Frontend**: React.js, HTML, CSS, JavaScript
+- **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB Atlas
-- **Hosting**: Vercel (Frontend), Render (Backend)
-
----
-
-## 🧑‍💻 Developer
-
-> Designed and Developed by **[Yash-Goyal]**  
-> Hackathon Project | [Web Sampurn IIT Patna.]  
-> [LinkedIn](https://www.linkedin.com/in/yash-goyal-075b8928b/)
+- **Database**: MongoDB 
 
 ---
 
@@ -68,6 +47,52 @@ Traditional gyms still rely on manual tracking, paper records, and WhatsApp grou
 - **QR-based Gym Entry** system
 - **Referral Program** for member growth
 - **Gamification**: Achievements, badges, and leaderboards for users
+- ## 🧠 AI Integration
+- **AI-powered Diet Chart**: Personalized diet plans for each member based on their goals and profile
+- ### 👑 Owner Dashboard
+- **Payment Tracking**: View who paid, payment modes (online/cash), and store member details
+- **Payment Reminders**: Sent through Gmail to members who haven’t paid
+- **Progress Tracking**: Visual charts showing member progress and challenge participation
+- **Challenge Management**: Owner can create and manage challenges for member
+
+---
+
+## 🖥️ How to Run this Web App on Your Laptop
+
+### 1️⃣ Prerequisites
+
+Make sure the following are installed:
+
+Make sure these tools are installed:
+
+- [Node.js](https://nodejs.org/) (version 22.15.0 or higher)
+- [MongoDB](https://www.mongodb.com/try/download/community)
+- Git
+
+---
+
+### 2️⃣ Clone the Repository
+
+bash
+git clone https://github.com/0073212/Gym-Management-System-by-Champions-Team.git
+cd Gym-Management-System-by-Champions-Team/Development
+
+---
+
+- install backend dependencies
+- make a .env file
+- PORT=5000
+- MONGO_URI='Your mongodb URI'
+- JWT_SECRET='Your jwt secret'
+- To find JWT_SECRET type command in terminal:node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+
+---
+
+## 🧑‍💻 Developer
+
+> Designed and Developed by **[Yash-Goyal]**  
+> Hackathon Project | [Web Sampurn IIT Patna.]  
+> [LinkedIn](https://www.linkedin.com/in/yash-goyal-075b8928b/)
 
 ---
 
