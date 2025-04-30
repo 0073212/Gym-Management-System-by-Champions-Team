@@ -65,7 +65,7 @@ Make sure the following are installed:
 
 Make sure these tools are installed:
 
-- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [Node.js](https://nodejs.org/) (version 22.15.0 or higher)
 - [MongoDB](https://www.mongodb.com/try/download/community)
 - Git
 
