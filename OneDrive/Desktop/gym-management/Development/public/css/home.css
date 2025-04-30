@@ -1,0 +1,282 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Background Image */
+body {
+    background: url('Images/Gym\ image\ 06.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #f2f2f2;
+    position: relative;
+}
+
+/* Dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid #ff1a1a;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff3333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ff1a1a;
+    box-shadow: 0 0 10px #ff1a1a;
+}
+
+/* Intro Hero Section */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-content {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #003366;
+}
+
+.intro-content h1 {
+    font-size: 52px;
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.intro-content em {
+    font-size: 18px;
+    color: #ffd700;
+}
+
+.intro-content a {
+    background-color: #ff3333;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: background 0.3s;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.intro-content a:hover {
+    background-color: #e60000;
+}
+
+/* Motivational Quote */
+#motivational-quote {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+#motivational-quote h2 {
+    font-size: 36px;
+    color: #00ccff;
+    margin-bottom: 10px;
+}
+
+#motivational-quote p {
+    font-size: 24px;
+    color: #ffd700;
+}
+
+/* Motivation Section */
+.motivation {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 40px auto;
+    border-radius: 20px;
+    max-width: 1000px;
+}
+
+.motivation h2 {
+    font-size: 36px;
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+.motivation p {
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.features article {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px #004080;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #0073e6;
+}
+
+.features h2 {
+    margin-bottom: 15px;
+    color: #ff3333;
+}
+
+.features p,
+.features ul {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.features a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.features a:hover {
+    text-decoration: underline;
+}
+
+/* Success Stories Section */
+.success-stories {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.success-stories h2 {
+    font-size: 36px;
+    color: #00ccff;
+    margin-bottom: 20px;
+}
+
+.success-stories p {
+    font-size: 20px;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.success-stories blockquote {
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 700px;
+    color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+    background-color: #0d0d0d;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.social-media img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-content h1 {
+        font-size: 36px;
+    }
+
+    .intro-content p {
+        font-size: 18px;
+    }
+
+    .motivation h2,
+    .success-stories h2 {
+        font-size: 28px;
+    }
+
+    .motivation p,
+    .success-stories p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,235 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body with Background Image and Overlay */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('Images/Gym\ image\ 06.jpg') no-repeat center center/cover;
+    color: #f2f2f2;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Dark Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid #ff1a1a;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff3333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ff1a1a;
+    box-shadow: 0 0 10px #ff1a1a;
+}
+
+/* Intro Section */
+.intro-message {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.intro-message h1 {
+    font-size: 48px;
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+.intro-message p {
+    font-size: 22px;
+    color: #dddddd;
+}
+
+/* Subscription Plans */
+.subscription {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 51, 102, 0.6);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.subscription:hover {
+    box-shadow: 0 12px 40px rgba(0, 255, 255, 0.4);
+}
+
+/* Title */
+.subscription h2 {
+    font-size: 32px;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+/* Price Labels */
+.price-label {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+/* Buttons */
+.btn {
+    background-color: transparent;
+    border: 2px solid #ff3333;
+    color: #ff3333;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #ff3333;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.6);
+}
+
+/* Discounted Price Button */
+.discounted {
+    border-color: #00cc66;
+    color: #00cc66;
+}
+
+.discounted:hover {
+    background-color: #00cc66;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 204, 102, 0.6);
+}
+
+/* Original Price Strike-through */
+.original-price {
+    position: relative;
+    display: inline-block;
+}
+
+.original-price::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the line */
+    background-color: #ff3333; /* Color of the line */
+    transform: rotate(20deg); /* Tilt the line */
+    transform-origin: center; /* Ensure it rotates around its center */
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-media img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Smooth entry animations */
+.intro-message,
+.subscription {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Button click animation */
+.btn.clicked {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .intro-message h1 {
+        font-size: 34px;
+    }
+
+    .intro-message p {
+        font-size: 18px;
+    }
+
+    .subscription {
+        width: 95%;
+        padding: 20px;
+    }
+}
