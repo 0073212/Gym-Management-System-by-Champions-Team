@@ -41,14 +41,6 @@ Traditional gyms still rely on manual tracking, paper records, and WhatsApp grou
 
 ---
 
-## 🧑‍💻 Developer
-
-> Designed and Developed by **[Yash-Goyal]**  
-> Hackathon Project | [Web Sampurn IIT Patna.]  
-> [LinkedIn](https://www.linkedin.com/in/yash-goyal-075b8928b/)
-
----
-
 ## 🔮 Future Scope
 
 - **Mobile App Version** for user convenience
@@ -96,11 +88,11 @@ cd Gym-Management-System-by-Champions-Team/Development
 
 ---
 
-🙌 Developed By
-Yash Goyal
-Hackathon Project | Web Sampurn IIT Patna
-🔗 LinkedIn
-GitHub: @0073212
+## 🧑‍💻 Developer
+
+> Designed and Developed by **[Yash-Goyal]**  
+> Hackathon Project | [Web Sampurn IIT Patna.]  
+> [LinkedIn](https://www.linkedin.com/in/yash-goyal-075b8928b/)
 
 ---
 
