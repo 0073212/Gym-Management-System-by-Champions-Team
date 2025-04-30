@@ -1,0 +1,211 @@
+/* Reset the browser*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+header.intro {
+    position: relative;
+    height: 100vh;
+    background: url('Images/Gym\ image\ 01.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+header .header-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header h1 span {
+    color: #ff4d4d;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff4d4d;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.section-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.section .text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.section .text h4 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.section .text ul li {
+    margin-bottom: 12px;
+}
+
+.section .image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.section .image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+}
+
+/* Main content background */
+.content {
+    background: url('Images/Gym\ image\ 02.jpg') no-repeat center center/cover;
+    padding: 20px 0;
+    /* Padding for spacing */
+}
+
+/* Mission */
+.mission {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mission p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 15px 30px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta a:hover {
+    background-color: #e60000;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+footer .contact p,
+footer .aboutus p {
+    margin-bottom: 15px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #ccc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .social-media a:hover {
+    color: #ff4d4d;
+}
+
+footer .aboutus a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer .aboutus a:hover {
+    color: #ff4d4d;
+}
+
+/* Button click animation */
+.cta a.clicked {
+    transform: scale(0.95);
+    background-color: #e60000;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Smooth appearance on page load */
+.header-content {
+    transition: opacity 1s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+}

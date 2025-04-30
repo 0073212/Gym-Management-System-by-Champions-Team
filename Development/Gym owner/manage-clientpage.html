@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Clients | Gym Owner Dashboard</title>
+    <link rel="stylesheet" href="manage-clientpage.css">
+</head>
+<body>
+    <!-- Sidebar start -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <h2>🏋️‍♂️ Gym Admin</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="manage-clientpage.html" class="active">👥 Manage Clients</a></li>
+                <li><a href="manage-plans.html">📄 Manage Plans</a></li>
+                <li><a href="#">💳 Payments</a></li>
+                <li><a href="#">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+        <div class="collapse-btn">➡️</div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="welcome-text">Manage Clients</div>
+            <div class="nav-icons">
+                <button class="settings-btn">⚙️</button>
+                <button class="profile-btn">👤</button>
+            </div>
+        </div>
+
+        <!-- Clients Table -->
+        <div class="clients-section">
+            <div class="section-header">
+                <h2>Clients List</h2>
+                <button class="add-client-btn">+ Add Client</button>
+            </div>
+
+            <div class="clients-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Subscription</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rohan Sharma</td>
+                            <td>rohan@example.com</td>
+                            <td>+91 9876543210</td>
+                            <td>Premium Plan</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Priya Verma</td>
+                            <td>priya@example.com</td>
+                            <td>+91 8765432109</td>
+                            <td>Basic Plan</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="manage-client.js"></script>
+</body>
+</html>
